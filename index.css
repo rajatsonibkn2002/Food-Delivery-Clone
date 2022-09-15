@@ -261,3 +261,10 @@ body{
     height: 20px;
     border-radius: 5px;
 }
+
+/* Kitchen Grid */
+#kitchen-grid{
+    display: grid;
+    grid-template-columns: 277px 277px 277px 277px;
+    gap: 39px 24px;
+}
