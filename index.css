@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&family=Squada+One&display=swap');
 
 body{
     height: 100%;
@@ -135,7 +135,7 @@ body{
     font-family: "Roboto";
 }
 
-#kitchen-container{
+#kitchen-container, #carousel-container{
     width: 1180px;
     margin: 0 auto;
 }
@@ -150,12 +150,12 @@ body{
     margin: 0;
 }
 
-#kitchen-card{
+#kitchen-card, #kitchen-card-carousel{
     display: flex;
     flex-direction: column;
 }
 
-#kitchen-card .dish-image{
+#kitchen-card .dish-image, #kitchen-card-carousel .dish-image{
     width: 277px;
 }
 
@@ -267,4 +267,142 @@ body{
     display: grid;
     grid-template-columns: 277px 277px 277px 277px;
     gap: 39px 24px;
+}
+
+/* Carousel Container */
+#carousel-container{
+    text-align: center;
+}
+
+#carousel{
+    display: flex;
+    align-items: center;
+}
+
+#carousel-heading{
+    margin: 122px 0 37.5px 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 20px;
+    letter-spacing: -0.012em;
+
+    color: #000000;
+}
+
+#carousel-cards{
+    width: 933px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#play-left-div{
+    position: relative;
+    height: 71.5px;
+    width: 71.5px;
+}
+
+#play-left-empty, #play-left-fill, #play-right-empty, #play-empty-fill{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 71.5px;
+    width: 71.5px;  
+}
+
+#play-left-fill{
+    opacity: 0;
+}
+
+#play-left-fill:hover{
+    opacity: 1;
+    filter: drop-shadow(5px 4px 20px rgba(0, 0, 0, 0.2));
+    transform: rotate(180deg);
+    
+}
+
+#play-right-div{
+    position: relative;
+    height: 71.5px;
+    width: 71.5px;
+}
+
+#play-right-empty{
+    transform: rotate(180deg);
+}
+
+#play-right-fill{
+    opacity: 0;
+}
+
+#play-right-fill:hover{
+    opacity: 1;
+    filter: drop-shadow(4px 5px 20px rgba(0, 0, 0, 0.2));
+}
+
+#kitchen-card-carousel:hover{
+    filter: drop-shadow(0px 6px 40px rgba(0, 0, 0, 0.14));
+}
+
+#request-button{
+    /* padding: 19px 25px; */
+    /* gap: 10px; */
+
+    width: 210px;
+    height: 48px;
+
+    background: #1AC073;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 0 auto;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: 87px 0 81px 0;
+}
+
+/* Video Section */
+#video-container{
+    width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#v-headline{
+    margin-bottom: 10px;
+}
+
+#v-description{
+    margin-bottom: 50px;
+}
+
+.video-headline{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.video-description{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0;
 }
