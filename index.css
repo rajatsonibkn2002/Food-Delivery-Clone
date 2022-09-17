@@ -22,13 +22,13 @@ body{
     align-items: center;
 }
 
-#nav-brand{
+#nav-brand, #footer-brand{
     font-family: "Squada One";
     font-weight: 400;
     font-size: 32px;
 }
 
-#nav-links{
+#nav-links, #footer-links{
     font-family: "Roboto";
     font-weight: 400;
     font-size: 18px;
@@ -371,6 +371,11 @@ body{
 }
 
 /* Video Section */
+#video-section{
+    height: 860px;
+    background: linear-gradient(to bottom, white 516px, #C7EACC 344px);
+}
+
 #video-container{
     width: 1050px;
     margin: 0 auto;
@@ -378,7 +383,9 @@ body{
 }
 
 #v-headline{
+    padding-top: 80px;
     margin-bottom: 10px;
+    /* margin: 80px 0 10px 0; */
 }
 
 #v-description{
@@ -405,4 +412,183 @@ body{
     letter-spacing: 0.2px;
     color: #737373;
     margin: 0;
+}
+
+#food-div{
+    position: relative;
+    width: 877px;
+    height: 442px;
+    margin: 0 auto 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#food-video{
+    margin: 0 auto 0 auto;
+    width: 877px;
+    height: 442px;
+}
+
+#play-button{
+    position: absolute;
+    width: 97.5px;
+    height: 97.5px;
+    z-index: 99999;
+}
+
+/* Call to Action Section */
+#call-to-action-section{
+    background: #F7F8FA;
+    height: 603px;
+}
+
+#call-to-action-container{
+    width: 1180px;
+
+    padding: 100px 0;
+    margin: 0px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#call-to-action-form{
+    width: 617px;
+}
+
+#call-to-action-heading h3{
+    margin: 0 0 5px 0;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #101115;
+}
+
+#call-to-action-description{
+    margin: 0 0 32px 0;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1B1C21;
+}
+
+#call-to-action-row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-to-action-row1-elements, #call-to-action-message{
+    border: none;
+    padding: 0;
+}
+
+.call-to-action-row1-elements{
+    width: 300px;
+    height: 58px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+#call-to-action-message{
+    width: 617px;
+    height: 164px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    margin-bottom: 22px;
+}
+
+.call-to-action-row1-elements::placeholder, #call-to-action-message::placeholder{
+    position: absolute;
+
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #929292;
+
+    margin: 19px 0 0 22px;
+}
+
+#call-to-action-submit{
+    /* padding: 19px 25px; */
+    /* gap: 10px; */
+
+    /* position: absolute; */
+    padding: 0;
+    width: 210px;
+    height: 58px;
+    /* left: -0.5px; */
+    /* top: 269px; */
+
+    background: #1AC073;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#food-delivery-image{
+    width: 503px;
+    height: 402px;
+}
+
+/* Footer Section */
+footer{
+    height: 137px;
+    background: #1AC073;
+}
+
+#footer-container{
+    color: white;
+
+    height: 58px;
+    width: 1180px;
+
+    margin: 0 auto;
+    padding-top: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border-bottom: 1px solid white;
+}
+
+#footer-brand, #footer-links{
+    margin: 0;
+}
+
+#footer-icons{
+    display: flex;
+    justify-content: space-between;
+
+    width: 68px;
+}
+
+.footer-icon{
+    width: 28px;
+    height: 26px;
+
+    background: #BEBEBE;
+    border-radius: 5px;
 }

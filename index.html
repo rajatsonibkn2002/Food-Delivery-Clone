@@ -408,15 +408,57 @@
         
     </section>
 
-    <section id="video">
+    <section id="video-section">
         <div id="video-container">
             <div id="v-headline"><h2 class="video-headline">We are providing best</h2><h2 class="video-headline">home cooked food delivery service.</h2></div>
             <div id="v-description">
                 <p class="video-description">Away from home and craving the tasty homemade recipes?</p>
                 <p class="video-description">Choose from a selection of our delicious home cooked dishes</p>
-        
+            </div>
+            <div id="food-div">
+                <img src="icons/play.svg" id="play-button" />
+                <video id="food-video" width="877" height="442" autoplay>
+                    <source src="videos/foodvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
+
+    <section id="call-to-action-section">
+        <div id="call-to-action-container">
+            <div id="call-to-action-form">
+                <div id="call-to-action-heading"><h3>Do you have a question</h3><h3>or want to become a seller?</h3></div>
+                <p id="call-to-action-description">Fill this form and our manager will contact you next 48 hours.</p>
+                <div id="call-to-action-row1">
+                    <input type="text" class="call-to-action-row1-elements" placeholder="Your Name" />
+                    <input type="email" class="call-to-action-row1-elements" placeholder="Your e-mail" />
+                </div>
+                <input type="text" id="call-to-action-message" placeholder="Your message" />
+                <input type="submit" id="call-to-action-submit" />
+            </div>
+            <img id="food-delivery-image" src="images/food_delivery.svg" />
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer-container">
+            <h2 id="footer-brand">JTGeats</h2>
+            <ul id="footer-links">
+                <li class="footer-link">Home</li>
+                <li class="footer-link">About</li>
+                <li class="footer-link">Menu</li>
+                <li class="footer-link">Blog</li>
+                <li class="footer-link">Contact</li>
+            </ul>
+            <div id="footer-icons">
+                <img class="footer-icon" src="icons/Facebook.svg" />
+                <img class="footer-icon" src="icons/instagram.svg" />
+            </div>
+        </div>
+        <div id="footer-line"></div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
